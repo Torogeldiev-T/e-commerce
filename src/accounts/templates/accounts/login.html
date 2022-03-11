@@ -1,0 +1,66 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Awesome Login Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container h-100">
+        <div class="d-flex justify-content-center h-100">
+            <div class="user_card">
+                <div class="d-flex justify-content-center">
+                    <div class="brand_logo_container">
+                        <img src="data:image/png;base64,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"
+                            class="brand_logo" alt="Logo" width="120px" height="120px">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center form_container">
+                    <form method="post">
+                        <div class="input-group mb-3">
+                            <div class="input-group-append">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" name="username" class="form-control input_user" value=""
+                                placeholder="username">
+                        </div>
+                        <div class="input-group mb-2">
+                            <div class="input-group-append">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input type="password" name="password" class="form-control input_pass" value=""
+                                placeholder="password">
+                        </div>
+                        <!-- <div class="form-group">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customControlInline">
+                                <label class="custom-control-label" for="customControlInline">Remember me</label>
+                            </div>
+                        </div> -->
+                        <div class="d-flex justify-content-center mt-3 login_container">
+                            {% csrf_token %}
+                            <button type="submit" name="button" class="btn login_btn">Login</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="mt-4">
+                    <div class="d-flex justify-content-center links">
+                        Don't have an account? <a href="#" class="ml-2">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
