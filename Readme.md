@@ -32,6 +32,7 @@ $ py manage.py runserver
 # How it looks in running
 
 ![Main page](src/media/view/ecommerce_main.png)
+![Chat with admin](src/media/view/chat.png)
 ![Product](src/media/view/e-commerce_detail.png)
 ![Product search](src/media/view/e-commerce_search.png)
 ![Product in the cart](src/media/view/e-commerce_cart.png)
