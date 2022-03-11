@@ -29,10 +29,9 @@
 10. Run server
     $ py manage.py runserver
 
-# Installation and running on Docker
+# How it looks in running
 
-1. To start project locally clone repository.
-    $ git clone <> 
-
-2. Go to src/ directory
-    $ cd src
+![Main page](media/view/ecommerce_main.png)
+![Product](media/view/e-commerce_detail.png)
+![Product search](media/view/e-commerce_search.png)
+![Product in the cart](media/view/e-commerce_cart.png)
